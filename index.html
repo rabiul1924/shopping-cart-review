@@ -125,7 +125,7 @@
 
             //grandtotal
             const grandTotal = totalPrice + tax;
-            document.getElementById('grand-total').innerText = '$' + tax;
+            document.getElementById('grand-total').innerText = '$' + grandTotal;
          }
 
          function getInputValue(product) {
@@ -133,7 +133,8 @@
             const productCount = parseInt(productInput.value);
             return productCount;
          }
-
+            
+         //remove
          const removeProduct = document.getElementById('remove-btn');
          removeProduct.addEventListener('click', function(event){
             event.target.parentElement.parentElement.remove();
